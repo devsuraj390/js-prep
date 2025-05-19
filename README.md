@@ -51,3 +51,8 @@ This repository includes a list of JavaScript topics along with related articles
 
 - https://www.geeksforgeeks.org/difference-between-domcontentloaded-and-load-events/
 - https://javascript.info/onload-ondomcontentloaded
+
+**call, apply and bind:**
+
+- https://medium.com/@omergoldberg/javascript-call-apply-and-bind-e5c27301f7bb
+- https://www.geekster.in/articles/call-apply-bind-methods-in-javascript/
