@@ -29,3 +29,30 @@ This repository includes a list of JavaScript topics along with related articles
 **Shallow Copy and Deep Copy:**
 
 - https://medium.com/version-1/cloning-an-object-in-javascript-shallow-copy-vs-deep-copy-fa8acd6681e9
+
+**Event Propagation, Bubbling, Capturing:**
+
+- https://dev.to/anshumanmahato/managing-event-flow-a-deep-dive-into-javascript-event-propagation-2gha
+- https://javascript.info/bubbling-and-capturing
+
+**Event Delegation:**
+
+- https://www.freecodecamp.org/news/event-delegation-javascript/
+- https://javascript.info/event-delegation
+- https://dev.to/shafayeat/mastering-javascript-event-delegation-3k2k
+
+**localStorage, sessionStorage and cookies:**
+
+- https://www.xenonstack.com/insights/local-vs-session-storage-cookie
+- https://www.geeksforgeeks.org/difference-between-local-storage-session-storage-and-cookies/
+- https://stackoverflow.com/questions/19867599/what-is-the-difference-between-localstorage-sessionstorage-session-and-cookies
+
+**'load' and 'DOMContentLoaded' event:**
+
+- https://www.geeksforgeeks.org/difference-between-domcontentloaded-and-load-events/
+- https://javascript.info/onload-ondomcontentloaded
+
+**call, apply and bind:**
+
+- https://medium.com/@omergoldberg/javascript-call-apply-and-bind-e5c27301f7bb
+- https://www.geekster.in/articles/call-apply-bind-methods-in-javascript/
