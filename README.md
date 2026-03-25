@@ -164,46 +164,6 @@ This repository includes a list of JavaScript topics along with related articles
 
 ---
 
-### Polyfills:
-
-- https://javascript.info/polyfills
-
-**promise.all():**
-
----
-
-### Design Patterns:
-
----
-
-### Coding
-
-**debounce, throttle:**
-
-- https://www.youtube.com/watch?v=cjIswDCKgu0&t=155s
-- https://css-tricks.com/debouncing-throttling-explained-examples/
-
-```
-function debounce(cb, delay) {
-    let timeout;
-
-    return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            cb(...args);
-        }, delay)
-    }
-}
-
-// To call
-const debounced = debounce(text => {
-    ...
-}, 1000)
-
-```
-
----
-
 ### DSA
 
 **arrays:**
