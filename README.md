@@ -90,6 +90,7 @@ This repository includes a list of JavaScript topics along with related articles
 - https://javascript.info/promise-error-handling
 - https://blog.webdevsimplified.com/2021-09/javascript-promises/
 - https://javascript.info/promise-api
+- https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
 
 **error handling:**
 
