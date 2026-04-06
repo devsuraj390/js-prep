@@ -25,16 +25,25 @@ arr.reduce((accumulator, current, index, array) => {
 }, initialValue);
 
 //Polyfill
-Array.prototype.myReduce = function (cb, acc) {
-  let start = 0;
-
-  if (acc === undefined) {
-    acc = this[0];
-    start = 1;
+Array.prototype.myReduce = function (callbackFn, initialValue) {
+  if (typeof callbackFn !== 'function') {
+    throw new TypeError('callbackFn must be a function');
   }
 
-  for (let i = start; i < this.length; i++) {
-    acc = cb(acc, this[i], i, this);
+  const noInitValue = initialValue === undefined;
+  const length = this.length;
+
+  if (noInitValue && length === 0) {
+    throw new TypeError('Reduce of empty array with no initial value');
+  }
+
+  let acc = noInitValue ? this[0] : initialValue;
+  let start = noInitValue ? 1 : 0;
+
+  for (let i = start; i < length; i++) {
+    if (Object.prototype.hasOwnProperty.call(this, i)) {
+      acc = callbackFn(acc, this[i], i, this);
+    }
   }
 
   return acc;
@@ -110,4 +119,35 @@ const debounced = debounce(text => {
     ...
 }, 1000)
 
+```
+
+**flatten an array:**
+
+```js
+// flatten([1, 2, 3, [4, 5], 6]) --> [1, 2, 3, 4, 5, 6]
+
+// Approach 1: Using recursion
+function flatten(arr) {
+  let result = [];
+
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      result = result.concat(flatten(item));
+    } else {
+      result.push(item);
+    }
+  }
+
+  return result;
+}
+
+// Approach 2: Using reduce()
+function flatten(arr) {
+  return arr.reduce((acc, curr) => {
+    if (Array.isArray(curr)) {
+      return acc.concat(flatten(curr));
+    }
+    return acc.concat(curr);
+  }, []);
+}
 ```
