@@ -172,9 +172,9 @@
 
 **trees:**
 
-**hashmap:**
+**map & set:**
 
-**hashset:**
+- https://javascript.info/map-set
 
 **searching:**
 

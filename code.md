@@ -119,6 +119,29 @@ const debounced = debounce(text => {
     ...
 }, 1000)
 
+//Throttle
+function throttle(fn, delay) {
+  let lastCallTime = 0;
+
+  return function (...args) {
+    const now = Date.now();
+
+    if(now - lastCallTime >= delay) {
+      lastCallTime = now;
+      fn.apply(this, args);
+    }
+  }
+}
+
+//To call
+const throttled = throttle(fn, delay);
+throttled(); ✅ runs immediately
+throttled(); ❌ ignored
+throttled(); ❌ ignored
+
+// after 1 sec
+throttled(); ✅ runs again
+
 ```
 
 **flatten an array:**
@@ -150,4 +173,30 @@ function flatten(arr) {
     return acc.concat(curr);
   }, []);
 }
+```
+
+**Event Delegation:**
+
+```html
+<ul id="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+Implement click handling such that:
+
+- Clicking any `<li>` logs its text.
+- Only one event listener is used.
+
+```js
+const list = document.getElementById('list');
+list.addEventListener('click', (e) => {
+  const li = e.target.closest('li');
+
+  if (li & list.contains(li)) {
+    console.log(li.textContent);
+  }
+});
 ```
