@@ -1,8 +1,18 @@
 #### ✅ 1. Foundations
 
+**ES6+ Features:**
+
+- let/const
+- destructuring
+- spread/rest
+- arrow functions
+- modules
+- classes
+- optional chaining
+- nullish coalescing
+
 **'strict' mode:**
 
-- https://www.geeksforgeeks.org/use-strict-in-javascript/
 - https://medium.com/@catherineisonline/what-is-strict-mode-in-javascript-75929adbe844
 
 **Scope and Hoisting:**
@@ -14,11 +24,19 @@
 
 - https://blog.webdevsimplified.com/2020-01/var-vs-let-vs-const/
 
+**objects:**
+
+- https://javascript.info/object-basics
+
 **Arrow Functions:**
 
 - https://dmitripavlutin.com/javascript-arrow-functions/
 - https://javascript.info/arrow-functions-basics
 - https://www.youtube.com/watch?v=6sQDTgOqh-I
+
+**Pure functions:**
+
+- https://www.freecodecamp.org/news/what-is-a-pure-function-in-javascript-acb887375dfe/
 
 **rest, spread operator:**
 
@@ -182,9 +200,18 @@
 
 ---
 
+#### Other Topics
+
+**Caching and how it can be used to improve performance:**
+
+- https://www.greatfrontend.com/interviews/study/three-months/questions/quiz/explain-the-concept-of-caching-and-how-it-can-be-used-to-improve-performance
+
+---
+
 #### References:
 
 - https://javascript.info/
 - https://developer.mozilla.org/en-US/
 - https://www.youtube.com/@WebDevSimplified
 - https://alpha.learnersbucket.com/
+- https://medium.com/@catherineisonline
